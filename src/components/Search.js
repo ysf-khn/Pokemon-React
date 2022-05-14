@@ -4,7 +4,7 @@ const Search = (props) => {
   const [text, setText] = useState('');
 
   const inputHandler = (e) => {
-    const query = e.target.value;
+    const query = e.target.value.toLowerCase();
     setText(query);
     props.onQuery(query);
   };
